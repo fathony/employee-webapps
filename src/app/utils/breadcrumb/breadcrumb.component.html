@@ -1,0 +1,27 @@
+<!-- begin:breadcrumb-->
+<div class="page-title d-flex flex-column justify-content-center flex-wrap mb-6">
+  <h1 class="page-heading d-flex text-dark fw-bold fs-1 flex-column justify-content-center my-0">
+    {{ title }}
+  </h1>
+  <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+    <li class="breadcrumb-item text-dark">
+      <a routerLink="/test" class="text-dark text-hover-primary cursor-pointer">Home</a>
+    </li>
+
+    <span class="breadcrumb-item fw-bold text-muted"> / </span>
+
+    <ng-container *ngFor="let menu of menus;index as i">
+      <li class="breadcrumb-item" *ngIf="menu.link">
+        <a [routerLink]="menu.link" class="text-muted text-hover-primary cursor-pointer">{{ menu.title }}</a>
+      </li>
+
+      <li class="breadcrumb-item text-muted" *ngIf="!menu.link">{{ menu.title }}</li>
+
+      <ng-container *ngIf="i !== menus.length - 1">
+        <span class="breadcrumb-item fw-bold text-muted"> / </span>
+      </ng-container>
+    </ng-container>
+
+  </ul>
+</div>
+<!-- end:breadcrumb-->

@@ -1,0 +1,70 @@
+<div
+  class="d-flex flex-column bgi-no-repeat rounded-top"
+  [style.background-image]="'url(./assets/media/misc/menu-header-bg.jpg)'"
+>
+  <h3 class="text-white fw-bold px-9 mt-6 mb-6">
+    Notification <span class="fs-8 opacity-75 ps-3"></span>
+  </h3>
+</div>
+
+<div class="tab-content">
+  <div
+    class="tab-pane fade"
+    id="kt_topbar_notifications_1"
+    role="tabpanel"
+    [ngClass]="activeTabId === 'kt_topbar_notifications_1' ? 'show active' : ''"
+  >
+    <div class="scroll-y mh-325px my-5 px-8">
+
+      <div class="d-flex flex-stack py-4 border-bottom">
+        <div class="d-flex align-items-center">
+          <div class="mb-0 me-2">
+            <!--            <a routerLink="inbox"-->
+            <!--               class="fs-6 text-gray-800 text-hover-primary fw-bolder">-->
+            <!--              Test Title-->
+            <!--            </a>-->
+            <div class="text-gray-500 fs-7">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elitasdf adsf fads fad fafdadsfads ffads fadsf adsf
+            </div>
+            <span class="badge badge-light fs-8 mt-3">
+              {{ formatDate('2023-05-25') }} <br>
+              <!--          {{ inbox.createdAt.split(' ')[1] }}-->
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-stack py-4 border-bottom">
+        <div class="d-flex align-items-center">
+          <div class="mb-0 me-2">
+            <!--            <a routerLink="inbox"-->
+            <!--               class="fs-6 text-gray-800 text-hover-primary fw-bolder">-->
+            <!--              Test Title-->
+            <!--            </a>-->
+            <div class="text-gray-400 fs-7">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elitasdf adsf fads fad fafdadsfads ffads fadsf adsf
+            </div>
+            <span class="badge badge-light fs-8 mt-3">
+              {{ formatDate('2023-05-25') }} <br>
+              <!--          {{ inbox.createdAt.split(' ')[1] }}-->
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="py-3 text-center border-top">
+      <a
+        routerLink="/inbox"
+        class="btn btn-color-gray-600 btn-active-color-primary"
+      >
+        View All
+        <span
+          [inlineSVG]="'./assets/media/icons/duotune/arrows/arr064.svg'"
+          class="svg-icon svg-icon-5"
+        ></span>
+      </a>
+    </div>
+  </div>
+</div>

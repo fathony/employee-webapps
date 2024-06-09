@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/sass/style.scss";
+// Replace above style with this css file to enable RTL styles
+@import './assets/sass/plugins.scss';
+// @import "./assets/css/style.rtl.css";
+@import "./assets/sass/style.angular.scss";
+
+@import url("https://p.typekit.net/p.css?s=1&k=asa3gze&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=29178588&app=typekit&e=css");
+
+//@font-face {
+//  font-family: "futura-pt";
+//  src: url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+//  font-display: auto;
+//  font-style: normal;
+//  font-weight: 700;
+//  font-stretch: normal;
+//}
+
+html, body, .p-component {
+  font-family: "futura-pt", sans-serif !important;
+}
+
+.p-calendar, .p-multiselect, .p-dropdown, .p-autocomplete .p-autocomplete-multiple-container, .p-inputnumber-input, p-inputnumber {
+  width: 100% !important;
+}
+
+[data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-title,
+[data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-icon {
+  color: #000 !important;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: transparent !important;
+  text-transform: uppercase !important;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  color: #000 !important;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+  color: #B5B5C3 !important;
+}
+
+//.p-component {
+//  font-family: Inter, Helvetica, "sans-serif" !important;
+//}
+
+//.p-paginator-current {
+//  margin-left: auto !important;
+//}
+
+.p-paginator {
+  justify-content: space-between !important;
+  border: none !important;
+}
+
+.p-paginator .p-paginator-first {
+  margin-left: auto !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight,
+.p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight):hover {
+  background: $primary !important;
+  color: $primary-inverse !important;
+  border-radius: 6px;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border-bottom: 1px dashed #dee2e6 !important;
+}
+
+.form-group label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.modal-footer {
+  display: block;
+}
+
+.modal-header {
+  padding: 5px 5px 5px 5px;
+}
+
+.p-paginator-rpp-options .p-dropdown-label {
+  padding: 0.75rem 0 0.75rem 0.75rem !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+@page {
+  //margin-left: 0;
+  //margin-right: 0;
+  //margin-top: 10px;
+  size: A4;
+  margin-top: 9mm;
+  margin-bottom: 8mm;
+  margin-left: 7mm;
+  margin-right: 7mm;
+}
+
+[data-kt-app-layout=light-sidebar]:not([data-kt-app-header-fixed=true]) .app-header {
+  background-color: #ffffff;
+}
+
+.app-sidebar {
+  box-shadow: 11px 0 31px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-custom.form-check-solid .form-check-input {
+  border: 1px solid #d5d5d5;
+}
+
+@media print {
+  .avoid-break {
+    break-inside: avoid;
+  }
+}
+
+.app-header-menu .menu .menu-item .menu-link.active {
+  background-color: $white;
+  font-weight: bold;
+}
+
+.custom-spinner .p-progress-spinner-circle {
+  animation: custom-progress-spinner-dash 1.5s ease-in-out infinite, custom-progress-spinner-color 6s ease-in-out infinite;
+}
+
+@keyframes custom-progress-spinner-color {
+  100%,
+  0% {
+    stroke: #E51937;
+  }
+  40% {
+    stroke: #E51937;
+  }
+  66% {
+    stroke: #E51937;
+  }
+  80%,
+  90% {
+    stroke: #E51937;
+  }
+}
+
+@keyframes custom-progress-spinner-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+.chat-time {
+  font-size: 10px;
+}
+

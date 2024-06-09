@@ -1,0 +1,127 @@
+// INDONESIA
+export const locale = {
+  lang: 'id',
+  data: {
+    GENERAL         : {
+      NAME       : 'Nama',
+      CREATED_AT : 'Dibuat Pada',
+      ACTION     : 'Aksi',
+      SEARCH     : "Cari",
+      SELECT     : "Pilih",
+      SHOWING    : 'Menampilkan',
+      TO         : 'sampai',
+      OF         : 'dari',
+      CATEGORY   : 'Kategori',
+      SHIP       : 'Kapal',
+      VESSEL     : 'Kapal',
+      INPUT      : 'Masukkan',
+      USER       : 'Pengguna',
+      PLEASE_WAIT: 'Mohon Tunggu',
+      YES        : 'Ya',
+      NO         : 'Tidak',
+      MONTH      : 'Bulan',
+      YEAR       : 'Tahun',
+    },
+    MENU            : {
+      DASHBOARD                 : 'Beranda',
+      MASTER_USER               : 'Pengguna',
+      MASTER_SHIP_CATEGORY      : 'Kategori Kapal',
+      MASTER_SHIP_TYPE          : 'Tipe Kapal',
+      MASTER_SHIP               : 'Kapal',
+      LIVE_MONITORING           : 'Pemantauan Langsung',
+      LIVE_MONITORING_MONITORING: 'Pemantauan',
+      LIVE_MONITORING_STATISTIC : 'Statistik',
+      REPORT                    : 'Laporan',
+      REPORT_ALL_DATA           : 'Semua Data',
+      REPORT_ALL_DATA_DETAIL    : 'Detail Laporan Semua Data',
+      REPORT_VESSEL_VIOLATION   : 'Pelanggaran',
+      REPORT_VIOLATION_DETAIL   : 'Detail Laporan Pelanggaran',
+      REPORT_RECAPITULATION     : 'Rekapitulasi',
+      SETTING                   : 'Pengaturan',
+    },
+    FORM_ACTION     : {
+      CREATE: 'Tambah',
+      UPDATE: 'Edit',
+      DELETE: 'Hapus',
+      SAVE  : 'Simpan',
+    },
+    STATUS          : {
+      ACTIVE  : 'Aktif',
+      INACTIVE: 'Tidak Aktif'
+    },
+    MASTER_SHIP     : {
+      LIST: {
+        SHIP_TYPE: 'Tipe Kapal',
+        WIDTH    : 'Lebar',
+        LENGTH   : 'Panjang',
+        FLAG     : 'Bendera',
+      }
+    },
+    REPORT_ALL_DATA : {
+      LIST  : {
+        TYPE        : 'Tipe',
+        SPEED       : 'Kecepatan',
+        LIMITED_AREA: 'Area Terbatas',
+        TIMESTAMP   : 'Waktu',
+        EXPORT      : 'Export',
+      },
+      DETAIL: {
+        SHIP_ID                   : 'Id Kapal',
+        SHIP_NAME                 : 'Nama Kapal',
+        SHIP_CATEGORY             : 'Ketegori Kapal',
+        SPEED                     : 'Kecepatan',
+        HEADING                   : 'Arah',
+        COURSE                    : 'Cource',
+        FLAG                      : 'Flag',
+        LENGTH                    : 'Length',
+        WIDTH                     : 'Width',
+        IS_IN_LIMITED_AREA        : 'Berada Di Area Terbatas',
+        DISTANCE_FROM_LIMITED_AREA: 'Jarak Dari Area Terbatas',
+        TIMESTAMP                 : 'Timestamp',
+      },
+    },
+    REPORT_VIOLATION: {
+      LIST  : {
+        IN       : 'Masuk',
+        OUT      : 'Keluar',
+        TIMESTAMP: 'Waktu',
+        EXPORT   : 'Export',
+        DURATION : 'Durasi'
+      },
+      DETAIL: {
+        SHIP_ID          : 'Id Kapal',
+        SHIP_NAME        : 'Nama Kapal',
+        SHIP_CATEGORY    : 'kategori Kapal',
+        TYPE             : 'Tipe',
+        LATEST_LATITUDE  : 'Latitude Terakhir',
+        LATEST_LONGITUDE : 'Longitude Terakhir',
+        START_TIMESTAMP  : 'Waktu Masuk',
+        END_TIMESTAMP    : 'Waktu Keluar',
+        ACCUMULATE_TIME  : 'Akumulasi Waktu(J:M:D)',
+        DISTANCE         : 'Jarak',
+        IS_DATA_AVAILABLE: 'Data Tersedia?',
+      }
+    },
+    SETTING         : {
+      LIMITED_AREA_DISTANCE : 'Jarak Area Terbatas (Meter)',
+      LIMITED_AREA_TIME     : 'Durasi Area Terbatas (Menit)',
+      EMAIL_NOTIFICATION    : 'Notifikasi Email',
+      PRESS_ENTER           : 'Tekan enter untuk menambahkan',
+      MARINE_TRAFFIC_API_KEY: 'Marine Traffic Api Key',
+    },
+    MONTHLY         : {
+      January  : 'Januari',
+      February : 'Februari',
+      March    : 'Maret',
+      April    : 'April',
+      May      : 'Mei',
+      June     : 'Juni',
+      July     : 'Juli',
+      August   : 'Agustus',
+      September: 'September',
+      October  : 'Oktober',
+      November : 'November',
+      December : 'Desember',
+    }
+  }
+};
